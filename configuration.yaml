@@ -231,10 +231,10 @@ welcome-message: true
 connectors:
  slack:
    # required
-   bot-token: "xoxb-6017221047332-6011893675237-BUjDokSRgK1JScfQNxiooPqe"
+   bot-token: "xxxx" 
    # optional
    socket-mode: true # default true
-   app-token: "xapp-1-A060ELTDBD1-6017318839716-6f8ea42c6a9ce2751a28f97b81c6615aab7bb117d7989f0eab22b7fc87b5bea5" # socket-mode needs to be true
+   app-token: "xxxx" # socket-mode needs to be true
    start-thread: true # default false, if true opsdroid will reply in a thread
    bot-name: "MJU" # default "opsdroid"
    default-room: "#opensw" # default "#general"
