@@ -110,17 +110,8 @@ welcome-message: true
 #    min-score: 1.0
 #
 #
-## Connector modules
-
-#   websocket:
-#     # optional
-#     bot-name: "mybot" # default "opsdroid"
-#     max-connections: 10 # default is 10 users can be connected at once
-#     connection-timeout: 10 # default 10 seconds before requested socket times out
-#     # Optional but recommended
-#     # token: "secret-token" # Used to validate request before assigning socket
-#   # Uncomment the connector(s) that you wish opsdroid to work on
-# #
+## Connector modulesf
+  
 #  ## Twitter (https://github.com/opsdroid/connector-twitter)
 #  twitter:
 #    # required
@@ -229,26 +220,25 @@ welcome-message: true
 #    bot-name: "mybot" # default "opsdroid"
 #  ## Slack (core)
 connectors:
- slack:
-   # required
-   bot-token: "xxxx" 
-   # optional
-   socket-mode: true # default true
-   app-token: "xxxx" # socket-mode needs to be true
-   start-thread: true # default false, if true opsdroid will reply in a thread
-   bot-name: "MJU" # default "opsdroid"
-   default-room: "#opensw" # default "#general"
-   icon-emoji: ":smile:" # default ":robot_face:"
-   # If set to true opsdroid will start a thread when replying to a message
-   start-thread: false # default false
+  slack:
+#    # required
+    bot-token: "xxxx"
+    # optional
+    socket-mode: True # default true
+    app-token: "xxxx"
+    # socket-mode needs to be true
+    start-thread: False # default false, if true opsdroid will reply in a thread
+    bot-name: "MJU" # default "opsdroid"
+    default-room: "#opensw" # default "#general"
+    icon-emoji: ":smile:" # default ":robot_face:"
    # Used to retrieve the conversations details from Slack API
    # refresh-interval: how often the connector will refresh the channels
-   refresh-interval: 600 # default 600
+    refresh-interval: 600 # default 600
    # channel-limit: Maximum channels to return on a single iteration.
    # if your instance has >1000 channels, consider raising this
    # (https://api.slack.com/methods/conversations.list#arg_limit)
-   channel-limit: 100 # default 100. ***
-
+    channel-limit: 100 # default 100. ***
+#
 #  ## Rocketchat (core)
 #  rocketchat:
 #    # required
@@ -296,13 +286,18 @@ connectors:
 
 ## Skill modules
 skills:
-  ##example skill
-  BlocksSkill:
-    path: 
-
+  ##input empty path
   nice:
     path: 
   
+  Intro:
+    path: 
+  
+  help:
+    path: 
+
+  website:
+    path:   
   ## Dance (https://github.com/opsdroid/skill-dance)
   dance: {}
 
