@@ -298,10 +298,10 @@ connectors:
 skills:
   ##example skill
   BlocksSkill:
-    path: /home/m/opensw6/block.py
+    path: 
 
   nice:
-    path: /home/m/opensw6/skill.py
+    path: 
   
   ## Dance (https://github.com/opsdroid/skill-dance)
   dance: {}
