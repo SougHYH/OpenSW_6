@@ -14,7 +14,7 @@ async def get_weather(config):
     return await response.json()
 
 
-@match_regex(r'(?:how|what)(?:\'s|s| is) the weather', case_sensitive=False)
+@match_regex(r'!weather', case_sensitive=False)
 async def tell_weather(opsdroid, config, message):
 
     weather = await get_weather(config)
