@@ -9,7 +9,8 @@ command_list = ['MJU_BOT 에는 다음과 같은 명령을 사용 할 수 있습
                 '!menu  -- 명지대 학식 메뉴',
                 '!room  -- 명지대 강의실 찾기',
                 '!calculator -- 계산기 모드 활성화',
-                '!exit calculator -- 계산기 모드 비활성화',]
+                '!exit calculator -- 계산기 모드 비활성화',
+                '!weather -- 현재 서울 기온, 습도 확인']
 
 @match_regex(r'!help')
 async def help(opsdroid, config, message):
