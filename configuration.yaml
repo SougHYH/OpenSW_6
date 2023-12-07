@@ -297,7 +297,10 @@ skills:
     path: 
 
   website:
-    path:   
+    path:  
+     
+  CalculatorSkill:
+    path:
   ## Dance (https://github.com/opsdroid/skill-dance)
   dance: {}
 
