@@ -301,6 +301,25 @@ skills:
 
   CalculatorSkill:
     path:
+
+  bus:
+    path: 
+
+  map:
+    path: 
+  
+  ClassroomSkill:
+    path: 
+
+  weather:
+    path: 
+  
+  library:
+    path: 
+  
+  menu:
+    path: 
+
   ## Dance (https://github.com/opsdroid/skill-dance)
   dance: {}
 
