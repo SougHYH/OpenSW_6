@@ -3,7 +3,7 @@ from opsdroid.matchers import match_regex
 from opsdroid.connector.slack.events import Blocks
 
 @match_regex(r'!map')
-async def website(opsdroid, config, message):
+async def map(opsdroid, config, message):
     await message.respond(Blocks([
             {
                 "type": "actions",

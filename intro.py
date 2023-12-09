@@ -6,7 +6,7 @@ from opsdroid.connector.slack.events import Blocks
 class Intro(Skill):
 
     @match_regex(r"!intro")
-    async def who_are_you(self, event):
+    async def intro(self, event):
         await event.respond(Blocks([
                 {
                     "type": "section",

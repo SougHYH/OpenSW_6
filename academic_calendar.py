@@ -4,7 +4,7 @@ from opsdroid.connector.slack.events import Blocks
 
 
 @match_regex(r"!calender")
-async def website(opsdroid, config, message):
+async def calender(opsdroid, config, message):
     await message.respond(
         Blocks(
             [

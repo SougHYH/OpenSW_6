@@ -4,7 +4,7 @@ from opsdroid.connector.slack.events import Blocks
 
 
 @match_regex(r"!bus")
-async def website(opsdroid, config, message):
+async def bus(opsdroid, config, message):
     await message.respond(
         Blocks(
             [
